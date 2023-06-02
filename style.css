@@ -490,6 +490,7 @@ footer h2{
     /*Header*/
     header{
         justify-content: center;
+        height: 8vh;
     }    
     
     .menu{
