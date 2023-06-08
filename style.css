@@ -28,7 +28,7 @@ a{
 }
 
 section{
-    padding: 6vh 8vh;
+    padding: 3rem 4rem;
     width: 100%;
     overflow: hidden;
 }
@@ -41,7 +41,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2vh 8vh;
+    padding: 1rem 4rem;
     width: 100vw;
     height: 13vh;
     background-color:var(--branco)
@@ -156,9 +156,9 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 2vh;
-    height: 58vh;
-    width: 32vh;
+    padding: 1rem;
+    height: 25rem;
+    width: 14rem;
     border-radius: 1rem;
     background-color: #ffffff;
     box-shadow: 0vh 3vh 6vh rgba(0, 0, 0, 0.1);
@@ -174,8 +174,8 @@ header{
     box-sizing:content-box;
     position: relative;
     padding: .5vh 1vh;
-    top: -56vh;
-    left: 2vh;
+    top: -24rem;
+    left: 1rem;
     width: max-content;
     background-color: var(--vermelho);
     border-radius: .3rem;
@@ -214,7 +214,7 @@ header{
 }
 
 .buy{
-    width: 28vh;
+    width: 100%;
 }
 
 .todosprodutos{
@@ -263,7 +263,7 @@ header{
     background-image: url(src/Supra.svg);
     width: 102%;
     height: 40vh;
-    background-size: auto;
+    background-size: 104%;
     background-repeat: no-repeat;
     display: flex;
     justify-content: end;
