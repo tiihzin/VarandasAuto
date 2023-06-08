@@ -152,7 +152,7 @@ header{
 .gridprodutos{
     display: grid;
     width: 100vw;
-    padding: 6vh 8vh;
+    padding: 3rem 4rem;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     column-gap: 1.5rem;
     /*overflow-x: auto;
@@ -643,6 +643,14 @@ footer h2{
     
     #personaliza h2{
         width: 100%;
+    }
+
+    #personaliza{
+        padding: 0;
+    }
+
+    #personaliza img{
+        border-radius: 0;
     }
     
     #personaliza h3{
