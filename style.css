@@ -47,8 +47,22 @@ header{
     background-color:var(--branco)
 }
 
-.menu :nth-child(n){
-    margin-right: 2vh;
+.menu :nth-child(n):not(:last-child){
+    margin-right: 1rem;
+}
+
+.conta{
+    padding: .5rem 1rem;
+    font-size: .9rem;
+    font-weight: 500;
+    background-color: var(--vermelho);
+    color: var(--branco);
+    border-radius: .375rem;
+    margin-right: 0;
+}
+
+.conta:hover{
+    background-color: #d11414;
 }
 
 .mlink{
@@ -325,10 +339,10 @@ header{
     display: grid;
     justify-content: center;
     width: 100vw;
-    padding: 6vh 8vh;
+    padding: 3rem 4rem;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    gap: 8vh 8vh;
+    gap: 4rem 4rem;
 }
 
 .unidade{
@@ -383,16 +397,6 @@ header{
     width: 100%;
 }
 
-form .formgrid{
-    display: grid;
-    width: 53vw;
-    justify-items: start;
-    column-gap: 3vw;
-    row-gap: 4vh;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    align-items: end;
-}
 
 form .dados{
     margin-bottom: 8vh;
@@ -407,7 +411,7 @@ label{
     font-weight: 500;
 }
 
-input[type="text"], input[type="number"], input[type="email"],input[type="tel"] {
+input[type="text"], input[type="number"], input[type="email"],input[type="tel"], input[type="password"] {
     width: 25vw;
     height: 7vh;
     margin-top: 1vh;
@@ -419,7 +423,7 @@ input[type="text"], input[type="number"], input[type="email"],input[type="tel"] 
     
 }
 
-input[type="text"]:focus, input[type="number"]:focus, input[type="email"]:focus,input[type="tel"]:focus{
+input[type="text"]:focus, input[type="number"]:focus, input[type="email"]:focus,input[type="tel"]:focus , input[type="password"]:focus{
     background-color: var(--cinza-claro);
     box-shadow: 0vh 3vh 6vh rgba(0, 0, 0, 0.1);
 }
@@ -486,6 +490,86 @@ footer h2{
     font-weight: 500;
 }
 
+
+/*Login*/
+.body-login{
+    background-color: var(--preto);
+    padding: 0 3rem;
+    display: flex;
+    overflow: hidden;
+}
+
+.imglogin{
+    height: 100vh;
+}
+
+.imglogin img{
+    height: 100%;
+}
+
+.body-login form{
+    width: 100%;
+}
+
+.body-login h3 {
+    color: var(--branco);
+}
+
+.singin, .singup{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    justify-items: center;
+    align-items: center;
+    gap: 2rem
+}
+
+
+.body-login form h2{
+    font-size: .8rem;
+    font-weight: 600;
+    text-align: center;
+    width: 80vh;
+    color: var(--cinza-escuro);
+    margin: 0;
+}
+
+.body-login form h3{
+    font-size: 1.2rem;
+    font-weight: 700;
+    text-align: center;
+    color: var(--branco);
+    margin: .5rem 0;
+}
+
+.body-login a {
+    font-size: .8rem;
+    color: var(--vermelho);
+    text-decoration:underline;
+}
+
+.body-login a:hover {
+    font-size: .8rem;
+    color: #d11414;
+}
+
+.close-login{
+    position: fixed;
+    top: 3rem;
+    right: 3rem;
+}
+
+.senha::after{
+    content: url(src/SetaVermelha.png);
+    width: 1rem;
+    position: relative;
+    height: 1vh;
+    top: -5vh;
+    right: -48vh;
+    cursor: pointer;
+}
 
 @media (max-width: 737px){
     body{
