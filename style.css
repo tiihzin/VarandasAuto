@@ -57,6 +57,14 @@ header{
     color: var(--preto);
 }
 
+.hiddem-desktop{
+    display: none;
+}
+
+.hiddem-pocket{
+    display: block;
+}
+
 .mlink:hover{
     color: var(--vermelho);
 }
@@ -146,7 +154,7 @@ header{
     width: 100vw;
     padding: 6vh 8vh;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-    column-gap: 3vh;
+    column-gap: 1.5rem;
     /*overflow-x: auto;
     scroll-snap-type: x mandatory;*/
     
@@ -173,7 +181,7 @@ header{
 .desconto{
     box-sizing:content-box;
     position: relative;
-    padding: .5vh 1vh;
+    padding: .25rem .5rem;
     top: -24rem;
     left: 1rem;
     width: max-content;
@@ -185,18 +193,18 @@ header{
 }
 
 .produto img{
-    width: 25vh;
+    width: 11rem;
 }
 
 .produto h4{
     font-size: 1rem;
-    margin-top: 2vh;
+    margin-top: 1rem;
     color: var(--preto);
 }
 
 .produto h5{
     color: var(--cinza-escuro);
-    margin-top: 2vh;
+    margin-top: 1rem;
     font-size: .8rem;
     font-weight: 500;
 }
@@ -210,7 +218,7 @@ header{
 .produto h3{
     color: var(--vermelho);
     font-size: 1.5rem;
-    margin-bottom: 2vh;
+    margin-bottom: .5rem;
 }
 
 .buy{
@@ -221,14 +229,14 @@ header{
     display: flex;
     width: 100%;
     justify-content: end;
-    margin-top: -4vh;
+    margin-top: -2rem;
 }
 
 .small{
     background-color: transparent;
     color: var(--vermelho);
     font-weight: 500;
-    padding: 2vh 0vh;
+    padding: 1rem 0;
 }
 
 .small:hover{
@@ -239,7 +247,7 @@ header{
 /*Sobre Nós*/
 #sobre{
     background-color: var(--cinza-claro);
-    padding: 6vh 6vh;
+    padding: 3rem;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
@@ -247,7 +255,7 @@ header{
 
 #sobre p{
     width: 90%;
-    margin-top: 4vh;
+    margin-top: 2rem;
     text-align: justify;
     font-size: .9rem;
     color: var(--grafite);
@@ -333,15 +341,21 @@ header{
 /*Personalização*/
 
 #personaliza{
-    background-color: var(--preto);
+    background-color: var(--branco);
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
+#personaliza img {
+    width: 102%;
+    border-radius: 1rem;
+}
+
 #personaliza h1{
     color: var(--branco);
 }
+
 
 #personaliza h2{
     font-size: 1rem;
@@ -487,6 +501,14 @@ footer h2{
         height: .60vw;
     }
 
+    .hiddem-pocket{
+        display: none;
+    }
+
+    .hiddem-desktop{
+        display: block;
+    }
+
     /*Header*/
     header{
         justify-content: center;
@@ -630,7 +652,9 @@ footer h2{
         color: var(--branco);
         margin: 3vh 0;
     }
-    
+
+
+
     #personaliza h4 {
         color: var(--cinza-escuro);
         margin-top: 4vh;
