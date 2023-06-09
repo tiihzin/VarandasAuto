@@ -454,6 +454,7 @@ footer{
     display: flex;
     padding: 6vh 8vh;
     flex-direction: column;
+    background-color: var(--cinza-claro);
     align-items: center;
     border-top: 1.5vh var(--grafite) solid;
 }
@@ -562,13 +563,17 @@ footer h2{
 }
 
 .senha::after{
-    content: url(src/SetaVermelha.png);
-    width: 1rem;
+    content: url(src/VerSenha.svg);
+    width: 0.5rem;
     position: relative;
     height: 1vh;
-    top: -5vh;
+    top: -4.8vh;
     right: -48vh;
     cursor: pointer;
+}
+
+.senha::after img{
+    width: 10rem;
 }
 
 @media (max-width: 737px){
@@ -775,12 +780,17 @@ footer h2{
         width: 100%;
     }
     
-    input[type="text"], input[type="number"], input[type="email"],input[type="tel"] {
+    input[type="text"], input[type="number"], input[type="email"],input[type="tel"], input[type="password"] {
         width: 100%;
     }
 
     input[type="submit"]{
         width: 100%;  
+    }
+
+    /*Personaliza*/
+    .body-login{
+        overflow: auto;
     }
 
     /*Footer*/
@@ -814,5 +824,7 @@ footer h2{
         font-weight: 500;
     }
     
+
+
 
 }
