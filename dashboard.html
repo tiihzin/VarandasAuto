@@ -5,21 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="dashboard.css">
-    <script defer src="scripts.js"></script>
+    <script defer src="dashboard.js"></script>
     <link rel="shortcut icon" href="src/FaviconDashboard.svg" type="image/x-icon">
     <title>Dashboard | Varanda's Autopeças</title>
 </head>
 <body>
     <header class="menuLateral">
-        <img src="src/LogoDashboard.png" alt="">
+        <img src="src/LogoDashboard.svg" alt="">
 
         <div class="servicos">
             <h2>Serviços</h2>
-            <a href="" class="linkaction">Minhas Peças</a>
-            <a href="" class="linkaction">Personalizar</a>
-            <a href="" class="linkaction">Carrinho</a>
-            <a href="" class="linkaction">Conta</a>
+            <a href="#" class="linkaction l1">Meus Pedidos</a>
+            <a href="#" class="linkaction l2">Personalizar</a>
+            <a href="#" class="linkaction l3">Loja</a>
+            <a href="#" class="linkaction l4">Minha Conta</a>
+
         </div>
+
+        <a href="singin.html" class="sair">Sair</a>
     </header>
+    <div class="alinhamento"></div>
+    <main class="pagina">
+        <div class="info">
+            <h1 id="titulo">Meus Pedidos</h1>
+            <div class="span-hight">
+                <span class="profile">
+                    <h5 id="persona">João da Silva Souza Pacheco</h5>
+                    <h6 id="member-status">Membro Gold</h6>
+                </span>
+                <span class="notifications">
+                    <img src="src/SinoIcon.svg" alt="">
+                </span>
+            </div>
+        </div>
+        <section id="innerpagina">
+            <h3>Dados Pessoais</h3>
+        </section>
+    </main>
 </body>
 </html>
