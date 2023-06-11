@@ -277,6 +277,16 @@ form{
     gap: 4rem;
 }
 
+label{
+    display: flex;
+    gap: .5rem;
+}
+
+label img{
+    width: .8rem;
+    cursor: pointer;
+}
+
 .gridveiculo{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -301,21 +311,27 @@ textarea{
     margin-top: 2rem;
 }
 
-input:not([type="color"],[type="submit"]){
+input:not([type="color"],[type="submit"], [type="button"]), select{
     padding: 1rem 1.5rem;
     border-radius: .375rem;
+    width: 20rem;
     border: var(--cinza-claro) solid .1rem;
 }
 
-input:not([type="color"],[type="submit"]):hover, textarea:hover{
+input:not([type="color"],[type="submit"], [type="button"]):hover:not(:disabled), textarea:hover:not(:disabled), select:hover:not(:disabled){
     border: var(--cinza-escuro) solid .1rem;
 }
 
-input:not([type="color"],[type="submit"]):focus, textarea:focus{
+input:not([type="color"],[type="submit"], [type="button"]):focus, textarea:focus, select:focus{
     border: var(--vermelho) solid .1rem;
 }
 
-input[type="submit"]{
+input:not([type="color"],[type="submit"], [type="button"]):disabled{
+    border: var(--cinza-claro) solid .1rem;
+    background-color: transparent;
+}
+
+.SolicitarSubmit{
     padding: .8rem;
     background-color: var(--vermelho);
     color: var(--branco);
@@ -467,4 +483,91 @@ input[type="submit"]{
 
 .vermais:hover{
     background-color: #F0F0F2;
+}
+
+
+/*Minha Conta*/
+    /*Nome*/
+.gridProfile{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.gridBank{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.contentBank{
+    margin-top: 4rem;
+}
+
+.fotoPerfil{
+    width: 6rem;
+}
+
+.contentProfile{
+    display: flex;
+    width: 100%;
+    gap: 4rem;
+}
+
+.MembroContent{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.MembroDisplay{
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+}
+
+#Membro{
+    font-weight: 700;
+}
+
+.DisplayPedidosFeitos{
+    color: var(--cinza-escuro);
+    font-size: .8rem;
+    font-weight: 500;
+}
+
+.Bronze{
+    color: #FF843F;
+}
+
+.Prata{
+    color: #D2D2D2;
+}
+
+.Ouro{
+    color: #FFD53F;
+}
+
+.EditarSubmit{
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    border: none;
+    font-size: .8rem;
+    color: var(--grafite);
+    cursor: pointer;
+    display: none;
+}
+
+.visible{
+    display: block;
+}
+
+.credito{
+    display: none;
 }
